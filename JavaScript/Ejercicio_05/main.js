@@ -1,4 +1,5 @@
-const Calculadora = require('./calculadora');
+import { Calculadora } from './modulo.js';
+const prompt = promptSync();
 
 try {
   let num1 = parseFloat(prompt('Ingrese el primer número: '));

@@ -1,4 +1,4 @@
-class Calculadora {
+export class Calculadora {
   static suma(a, b) {
     if (typeof a !== 'number' || typeof b !== 'number') {
       throw new Error('Ambos operadores deben ser números para la suma.');
