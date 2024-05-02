@@ -7,7 +7,7 @@ function validarTarjeta(numero) {
 
   if (/^3[47]\d{13}$/.test(numero)) {
     return "American Express";
-  } else if (/^(30[0-5]|36|38)\d{11}$/.test(numero)) {
+  } else if (/^3(?:0[0-5]|[68][0-9])[0-9]{11}$/.test(numero)) {
     return "Diners Club";
   } else if (/^6011\d{12}$/.test(numero)) {
     return "Discover";
