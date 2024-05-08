@@ -1,4 +1,4 @@
-function encontrarPalabraMasLarga(...palabras) {
+const encontrarPalabraMasLarga=(...palabras) =>{
   let palabraMasLarga = "";
   palabras.forEach(palabra => {
     if (palabra.length > palabraMasLarga.length) {
@@ -8,7 +8,7 @@ function encontrarPalabraMasLarga(...palabras) {
   return palabraMasLarga;
 }
 
-function mainEncontrarPalabraMasLarga() {
+const mainEncontrarPalabraMasLarga=() =>{
   const palabras = [];
   let palabra;
   console.log("Ingrese las palabras (ingrese 'fin' para terminar):");
