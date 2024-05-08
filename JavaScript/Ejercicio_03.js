@@ -1,4 +1,4 @@
-function mainOrdenarNumeros() {
+const mainOrdenarNumeros=() =>{
   let numeros = [];
   let n;
   while ((n = parseInt(prompt("Ingrese un número (o ingrese 0 para terminar):"))) !== 0) {
@@ -8,11 +8,11 @@ function mainOrdenarNumeros() {
   mostrarTablaNumeros(numerosOrdenados);
 }
 
-function ordenarNumeros(...numeros) {
+const ordenarNumeros=(...numeros) =>{
   return numeros.sort((a, b) => b - a);
 }
 
-function mostrarTablaNumeros(numerosOrdenados) {
+const mostrarTablaNumeros=(numerosOrdenados)=> {
   console.log("Tabla de números ordenados de mayor a menor:");
   console.log("-------------------------------------------");
   console.log("| Posición |   Número   |");
